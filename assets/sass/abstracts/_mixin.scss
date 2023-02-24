@@ -16,3 +16,17 @@
 // .container__box-item {
 //     @include transform(skew(30deg, 20deg));
 //   }
+
+@mixin setka-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+@mixin icon-footer {
+  border-radius: 50%;
+  background: $bacground-color;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+}
