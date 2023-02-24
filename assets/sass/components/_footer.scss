@@ -1,1 +1,125 @@
+.footer {
+  width: 70%;
+  margin: 0 auto;
 
+  img {
+    align-items: center;
+  }
+  .footer__title {
+    @include setka-footer;
+    justify-content: center;
+  }
+  .footer__wrapper {
+    display: grid;
+    grid-template-areas: "footer__block-contacts footer__block-address";
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    gap: 2%;
+  }
+  .footer__block-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: footer__block-contacts;
+  }
+  .footer__phone,
+  .footer__time,
+  .footer__address {
+    @include setka-footer;
+  }
+  .footer__phone-link {
+    text-decoration: none;
+  }
+  .footer__socials {
+    @include setka-footer;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+    width: 70%;
+  }
+  .footer__instagram,
+  .footer__vk,
+  .footer__telegram {
+    @include icon-footer;
+    @include setka-footer;
+  }
+  .footer__block-address {
+    grid-area: footer__block-address;
+  }
+  .footer__map {
+    width: 70%;
+    height: 200px;
+    border-radius: 10%;
+  }
+  .footer__button-up {
+    position: fixed;
+    bottom: 28px;
+    right: 2%;
+    z-index: 9;
+  }
+  .footer__icon-up {
+    fill: #4dbca991;
+    height: 100px;
+    width: 100px;
+  }
+  .footer__button-up:hover > .footer__icon-up {
+    fill: $bacground-color;
+  }
+  .footer__instagram:hover,
+  .footer__vk:hover,
+  .footer__telegram:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+  }
+  @media screen and (max-width: 576px) {
+    width: 90%;
+    margin: 0 auto;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+    .footer__wrapper {
+      display: grid;
+      grid-template-areas:
+        "footer__block-address"
+        "footer__block-contacts";
+      margin-top: 5%;
+      grid-template-columns: 1fr;
+    }
+    .footer__map-inner {
+      display: flex;
+      justify-content: center;
+    }
+    .footer__socials {
+      width: 70%;
+      margin: 0 auto;
+    }
+    .footer__instagram,
+    .footer__vk,
+    .footer__telegram {
+      width: 50px;
+      height: 50px;
+    }
+    .footer__phone,
+    .footer__time,
+    .footer__address {
+      margin: 3%;
+    }
+    .footer__title {
+      font-weight: 500;
+      font-size: calc(30px + (14 + 14 * 0.7) * ((100vw - 576px) / 1920));
+    }
+    p,
+    .footer__phone-link {
+      font-weight: 200;
+      font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 576px) / 1920));
+    }
+    .footer__icon-up {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  @media screen and (min-width: 2500px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
