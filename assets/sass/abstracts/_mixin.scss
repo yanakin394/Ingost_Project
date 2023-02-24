@@ -1,0 +1,18 @@
+// для примера, здесь общие/повторяющиеся свойства:
+// @mixin transform($property) {
+//   -webkit-transform: $property;
+//   -ms-transform: $property;
+//   transform: $property;
+// }
+
+// @mixin setka {
+//   width: 50%;
+//   min-height: 300px;
+//   border: 1px solid green;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// в components добавляет  @include + наименование:
+// .container__box-item {
+//     @include transform(skew(30deg, 20deg));
+//   }
