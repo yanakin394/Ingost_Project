@@ -1,7 +1,10 @@
 .title-block {
-    width: 100%;
-    background-image: url(../../images/title-image.jpg);
+    max-width: 100%;
+    height: 870px;
+    background-image: url(../images/title-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     .title-block__title {
         margin-left: 113px;
