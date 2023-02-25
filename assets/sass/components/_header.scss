@@ -2,6 +2,7 @@ header {
     width: 100%;
     margin-top: 2%;
     color: $color;
+
     .header__container {
         height: 230px;
         display: flex;
@@ -25,9 +26,12 @@ header {
     .header__link {
         font-family: 'CormorantGaramond-Regular', serif;
         font-size: 38px;
-        text-decoration: none;
         color: $color;
         padding-left: 3%;
+        text-decoration: none;
+    }
+    .header__link:hover {
+        color: #4DBCBC;
     }
     .header__text {
         font-family: 'CormorantGaramond-Regular', serif;

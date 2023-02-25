@@ -1,0 +1,32 @@
+.title-block {
+    width: 100%;
+    background-image: url(../../images/title-image.jpg);
+    background-repeat: no-repeat;
+
+    .title-block__title {
+        margin-left: 113px;
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 68px;
+        color: $color;
+        ;
+    }
+    .title-block__list {
+        margin-left: 113px;
+        padding-left: 0;
+    }
+    .title-block__text .title-block__list-item {
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: $color;
+    }
+    .title-block__list-item {
+        list-style-type:none;
+    }
+
+}
