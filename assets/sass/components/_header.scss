@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    margin-top: 2%;
+    color: $color;
+    .header__container {
+        height: 230px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: content;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .header__logo {
+        width: 50%;
+        object-fit: cover;
+    }
+    .header__subcontainer {
+        width: 370px;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header__link {
+        font-family: $font_cormorant;
+        font-size: 38px;
+        text-decoration: none;
+        color: $color;
+        padding-left: 3%;
+    }
+    .header__text {
+        font-family: $font_cormorant;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        align-items: center;
+        text-align: right;
+        color: $color;
+    }
+}
