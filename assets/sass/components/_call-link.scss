@@ -1,0 +1,29 @@
+.call-link {
+  background: url("../images/background2.jpg") no-repeat center;
+  background-size: cover;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .call-link__wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    width: 30%;
+    min-height: 30%;
+    margin: 5% 35% 15% 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .call-link__text {
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 8% 0 8% 0;
+  }
+  .call-link__button {
+    width: 50%;
+    background: #31b9b9;
+    border: 1px solid #31b9b9;
+  }
+}
