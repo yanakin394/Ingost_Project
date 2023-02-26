@@ -15,15 +15,25 @@
     justify-content: center;
   }
   .call-link__text {
-    width: 50%;
-    margin: 0 auto;
     align-items: center;
     text-align: center;
     padding: 8% 0 8% 0;
   }
+  .call-link__box-button {
+    display: flex;
+    justify-content: center;
+    padding: 1% 0 5% 0;
+  }
   .call-link__button {
-    width: 50%;
     background: #31b9b9;
-    border: 1px solid #31b9b9;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 39px;
+    color: #ffffff;
+    padding: 1% 2% 1% 2%;
   }
 }
