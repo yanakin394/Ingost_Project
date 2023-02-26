@@ -1,0 +1,32 @@
+.wrapper{
+    color: $color;
+    .wrapper__review {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 90%;
+        grid-template-areas: 
+        "img name"
+        "img text";
+        justify-items: center;
+        align-content: space-evenly;
+    }
+    .wrapper__review_name {
+        grid-area: name;
+        font-weight: bold;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .wrapper__review_text {
+        grid-area: text;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    img {
+        width: 100%;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
