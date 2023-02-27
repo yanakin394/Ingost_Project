@@ -6,13 +6,15 @@
   font-size: 36px;
 }
 .footer p,
-.footer__phone-link {
+.footer__phone-link,
+.call-link__text {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-style: normal;
   font-size: calc(24px + 6 * (100vw / 1920));
   color: $color;
   padding-left: 5%;
+  line-height: 44px;
 }
 .footer__title {
   font-family: "Cormorant Garamond", serif;
@@ -21,3 +23,4 @@
   font-size: calc(30px + 14 * (100vw / 1920));
   color: $color;
 }
+

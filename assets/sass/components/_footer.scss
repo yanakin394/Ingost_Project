@@ -1,6 +1,7 @@
 .footer {
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 2%;
 
   img {
     align-items: center;
@@ -30,23 +31,26 @@
   .footer__phone-link {
     text-decoration: none;
   }
+  .footer__phone-link:hover {
+    color: #4dbcbc;
+  }
   .footer__socials {
     @include setka-footer;
     justify-content: space-evenly;
     margin-bottom: 0;
-    width: 70%;
   }
   .footer__instagram,
   .footer__vk,
   .footer__telegram {
     @include icon-footer;
     @include setka-footer;
+    margin-right: 10px;
   }
   .footer__block-address {
     grid-area: footer__block-address;
   }
   .footer__map {
-    width: 70%;
+    width: 90%;
     height: 200px;
     border-radius: 10%;
   }
@@ -68,6 +72,37 @@
   .footer__vk:hover,
   .footer__telegram:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+  }
+  @media screen and (min-width: 2500px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 992px) {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    .footer__icon-up {
+      height: 90px;
+      width: 90px;
+    }
+    .footer__instagram,
+    .footer__vk,
+    .footer__telegram {
+      width: 60px;
+      height: 60px;
+    }
+    p,
+    .footer__phone-link {
+      line-height: 35px;
+      font-weight: 300;
+      font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 992px) / 1920));
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footer__map {
+      height: 120px;
+    }
   }
   @media screen and (max-width: 576px) {
     width: 90%;
@@ -111,15 +146,15 @@
     p,
     .footer__phone-link {
       font-weight: 200;
+      line-height: 28px;
       font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 576px) / 1920));
     }
     .footer__icon-up {
       height: 80px;
       width: 80px;
     }
-  }
-  @media screen and (min-width: 2500px) {
-    width: 50%;
-    margin: 0 auto;
+    .footer__map {
+      height: 180px;
+    }
   }
 }
