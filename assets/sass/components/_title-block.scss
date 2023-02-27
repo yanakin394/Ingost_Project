@@ -1,7 +1,7 @@
 .title-block {
     max-width: 100%;
     height: 870px;
-    background-image: url(../images/title-image.jpg);
+    background-image: linear-gradient(to right, white 0%, transparent 100%), url(../images/title-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,7 +14,7 @@
         font-size: 56px;
         line-height: 68px;
         color: $color;
-        ;
+        padding-top: 113px;
     }
     .title-block__list {
         margin-left: 113px;
