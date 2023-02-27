@@ -30,13 +30,23 @@
 //         padding-right: 5%;
 //     }
 // }
-.carousel{
-    margin-top: 50px;
+.reviews{
+    .carousel{
+        margin-top: 10px;
+    }
     .carousel-inner{
         height: 250px;
     }
     .carousel-caption{
         color: $color;
         top: 100%;
+    }
+    .reviews_title {
+        display:flex;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $color;
+        margin-top: 10px;
     }
 }
