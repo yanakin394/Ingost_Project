@@ -63,14 +63,15 @@ header {
         }
     }
     @media screen and (max-width: 576px) {
-    .header__subcontainer {
+        .header__subcontainer {
             margin-top: 0;
-    .header__text{
-        font-size: 12px;
-    }
-    .header__link {
-        font-size: 18px;
-    }
+            .header__text{
+                font-size: 12px;
+            }
+            .header__link {
+                font-size: 18px;
+            }
+        }
     }
     @media screen and (max-width: 350px) {        
         .header__text{
