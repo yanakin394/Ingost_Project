@@ -6,21 +6,6 @@
 //   font-size: 36px;
 // }
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Shantell+Sans&display=swap");
-.footer p,
-.footer__phone-link,
-.call-link__text {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36px;
-  color: $color;
-  padding-left: 5%;
-  line-height: 44px;
-}
-.footer__title {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 48px;
-  color: $color;
-}
+// :root {
+//     --bs-body-font-family: 'Cormorant Garamond', serif;
+// }

@@ -1,26 +1,31 @@
 .footer {
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 2%;
+  @include container;
+  padding-bottom: 2%;
 
   img {
     align-items: center;
   }
+  p {
+    padding-left: 5%;
+    @include text;
+  }
   .footer__title {
     @include setka-footer;
+    @include title;
     justify-content: center;
+    margin-bottom: 1%;
   }
   .footer__wrapper {
     display: grid;
     grid-template-areas: "footer__block-contacts footer__block-address";
     grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
     gap: 2%;
   }
   .footer__block-contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 2%;
     grid-area: footer__block-contacts;
   }
   .footer__phone,
@@ -30,6 +35,8 @@
   }
   .footer__phone-link {
     text-decoration: none;
+    padding-left: 5%;
+    @include text;
   }
   .footer__phone-link:hover {
     color: #4dbcbc;
@@ -74,8 +81,7 @@
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
   }
   @media screen and (min-width: 2500px) {
-    width: 50%;
-    margin: 0 auto;
+    @include container-2500;
   }
   @media screen and (max-width: 992px) {
     img {
@@ -93,21 +99,24 @@
       height: 60px;
     }
     p,
-    .footer__phone-link,
-    .call-link__text {
-      line-height: 35px;
-      font-weight: 300;
-      font-size: 24px;
+    .footer__phone-link {
+      @include text-992;
     }
   }
   @media screen and (max-width: 768px) {
     .footer__map {
       height: 120px;
     }
+    .footer__title {
+      @include title-768;
+    }
+    p,
+    .footer__phone-link {
+      @include text-768;
+    }
   }
   @media screen and (max-width: 576px) {
-    width: 90%;
-    margin: 0 auto;
+    @include container-576;
 
     img {
       width: 30px;
@@ -122,12 +131,10 @@
       grid-template-columns: 1fr;
     }
     .footer__map-inner {
-      display: flex;
-      justify-content: center;
+      @include flex-ctr;
     }
     .footer__socials {
-      width: 70%;
-      margin: 0 auto;
+      @include container;
     }
     .footer__instagram,
     .footer__vk,
@@ -139,17 +146,6 @@
     .footer__time,
     .footer__address {
       margin: 3%;
-    }
-    .footer__title {
-      font-weight: 500;
-      font-size: 24px;
-    }
-    p,
-    .footer__phone-link,
-    .call-link__text {
-      font-weight: 200;
-      line-height: 28px;
-      font-size: 20px;
     }
     .footer__icon-up {
       height: 80px;

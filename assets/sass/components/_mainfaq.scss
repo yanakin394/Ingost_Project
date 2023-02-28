@@ -1,28 +1,29 @@
 :root {
-    --bs-body-font-family: 'Cormorant Garamond', serif;
+  --bs-body-font-family: "Cormorant Garamond", serif;
 }
-.faqs{
-    .faqs_title{
-        display:flex;
-        justify-content: center;
-        font-size: 1.5em;
-        font-weight: bold;
-        color: $color;
-    }
-    .accordion {
-    margin-left:auto;
+.faqs {
+  margin-top: 5%;
+  .faqs_title {
+    @include flex-ctr;
+    @include title;
+  }
+  h2 {
+    @include subtitle;
+  }
+  .accordion {
+    margin-left: auto;
     margin-right: auto;
     font-size: 1em;
     --bs-accordion-active-color: none;
     --bs-accordion-btn-focus-border-color: #4dbca991;
     --bs-accordion-btn-focus-box-shadow: none;
-    }
-    .accordion-button {
-        background-color: #4dbca991;
-    }
-    .accordion-item {
-        color: $color;
-        margin-left:auto;
-        margin-right: auto;
-    }
+  }
+  .accordion-button {
+    // background-color: #4dbca991;
+  }
+  .accordion-item {
+    color: $color;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

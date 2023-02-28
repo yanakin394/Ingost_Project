@@ -24,3 +24,66 @@
   background-size: cover;
   max-width: 100%;
 }
+@mixin flex-ctr {
+  display: flex;
+  justify-content: center;
+}
+@mixin title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: $color;
+  line-height: 58px;
+}
+@mixin title-768 {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 50px;
+}
+@mixin subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: $color;
+  line-height: 50px;
+}
+@mixin subtitle-992 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+}
+@mixin subtitle-768 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+}
+@mixin text {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: $color;
+  line-height: 44px;
+}
+@mixin text-992 {
+  font-size: 28px;
+  line-height: 40px;
+}
+@mixin text-768 {
+  font-size: 24px;
+  line-height: 38px;
+}
+@mixin container {
+  width: 70%;
+  margin: 0 auto;
+}
+@mixin container-2500 {
+  width: 65%;
+  margin: 0 auto;
+}
+@mixin container-576 {
+  width: 95%;
+  margin: 0 auto;
+}
