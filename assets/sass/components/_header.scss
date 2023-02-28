@@ -10,6 +10,7 @@ header {
         margin-right: 6%;
     }
     .header__logo {
+        width: 25%;
         object-fit: contain;
     }
     .header__subcontainer {
@@ -46,7 +47,6 @@ header {
             align-items: flex-end;
         }
         .header__logo {
-            max-width: 35%;
             margin: 0 0 0 0;
         }
         .header__text{
