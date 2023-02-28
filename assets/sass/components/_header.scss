@@ -10,7 +10,6 @@ header {
         margin-right: 6%;
     }
     .header__logo {
-        max-width: 40%;
         object-fit: contain;
     }
     .header__subcontainer {
@@ -36,7 +35,6 @@ header {
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
-        /* line-height: 29px; */
         align-items: center;
         text-align: right;
         color: $color;
@@ -66,19 +64,23 @@ header {
         .header__subcontainer {
             margin-top: 0;
             .header__text{
-                font-size: 12px;
+                font-size: 10px;
             }
             .header__link {
-                font-size: 18px;
+                font-size: 14px;
+                margin-left: 6%;
             }
         }
     }
     @media screen and (max-width: 350px) {        
-        .header__text{
-            font-size: 8px;
-            padding-right: 5%;        }
-        .header__link {
-            font-size: 14px;
+        .header__subcontainer {
+            .header__text{
+                font-size: 8px;                       
+            }
+            .header__link {
+                font-size: 8px;
+                margin-left: 12%;
+            }
         }
-        }
+    }
 }
