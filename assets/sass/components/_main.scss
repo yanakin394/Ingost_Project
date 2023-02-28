@@ -4,6 +4,9 @@
     flex-wrap: wrap;
     justify-content: center;
     background-image: url(../images/photo/list.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size:auto;
   }
   .main__two {
     display: flex;
@@ -13,21 +16,20 @@
     padding: 10px;
   }
   .kitchen {
-    min-width: 70%;
-    min-height: 30%;
+    min-width: 40%;
+    min-height: 20%;
     padding: 5px;
   }
   .lemon {
-    min-width: 70%;
-    min-height: 30%;
+    min-width: 20%;
+    min-height: 20%;
     padding: 5px;
   }
   .scoop {
     display: flex;
-    min-width: 20%;
-    max-height: 20%;
-    padding: 10px;
-    margin: 5px;
+    max-width: 30em;
+    max-height: 31em;
+    margin-top: 1%;
   }
   .main__text {
     display: flex;
@@ -50,6 +52,12 @@
     font-style: normal;
     font-size: calc(30px + 14 * (100vw / 1920));
   }
+  @media screen and (max-width: 576px){
+  .main__title1 {
+    font-weight: 500;
+    font-size: calc(30px + 23.8 * (100vw - 576px) / 1920);
+  }
+}
   .list {
     width: 10%;
     height: 20%;
@@ -59,6 +67,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin: 15px;
     padding: 15px;
   }
@@ -83,4 +92,14 @@
     font-family: "Cormorant Garamond", serif;
     color: $color;
   }
+  @media (max-width: 850px) {
+    .scoop {
+      display: none;
+    }
+}
+  @media (max-width: 550) {
+    .main__container1{
+      flex-wrap: wrap;
+    }
+}
 }
