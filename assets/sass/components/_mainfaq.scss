@@ -1,11 +1,8 @@
 .faqs {
-  margin-top: 5%;
-  .faqs_title {
+  @include margin-top-block;
+  .faqs__title {
     @include flex-ctr;
     @include title;
-  }
-  h2 {
-    @include subtitle;
   }
   .accordion {
     margin-left: auto;
@@ -24,9 +21,10 @@
     margin-right: auto;
   }
   .faqs__wrapper {
-    @include container-2500;
-    margin-top: 2%;
+    @include container;
+    @include margin-top-title;
   }
+  h2,
   .faqs__subtitle {
     @include subtitle;
   }
@@ -37,5 +35,36 @@
   .faqs__backgraund,
   .faqs__text {
     background: rgb(77 188 169 / 4%);
+  }
+  @media screen and (min-width: 2500px) {
+    .faqs__wrapper {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .faqs__text {
+      @include text-992;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .faqs__text {
+      @include text-768;
+    }
+    .faqs__title {
+      @include title-768;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .faqs__wrapper {
+      @include container-576;
+    }
   }
 }

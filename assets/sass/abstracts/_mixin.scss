@@ -87,3 +87,10 @@
   width: 95%;
   margin: 0 auto;
 }
+
+@mixin margin-top-block {
+  margin-top: 7%;
+}
+@mixin margin-top-title {
+  margin-top: 5%;
+}

@@ -3,10 +3,14 @@ body {
 }
 .services {
   position: relative;
+  @include margin-top-block;
   .services__leaf {
     position: absolute;
     transform: translateY(-60%);
     left: -30px;
+  }
+  .services__content {
+    @include margin-top-title;
   }
   .services__container {
     @include container;
@@ -30,18 +34,18 @@ body {
   .services__item {
     text-align: center;
   }
-  .item-services__row {
+  .services__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 233px;
   }
-  .item-services__picture {
+  .services__picture {
     width: 80px;
     height: 80px;
     @include flex-ctr;
   }
-  .item-services__title {
+  .services__text {
     text-align: center;
     @include text;
   }
@@ -51,12 +55,12 @@ body {
     }
   }
   @media screen and (max-width: 992px) {
-    .item-services__title {
+    .services__text {
       @include text-992;
     }
   }
   @media screen and (max-width: 768px) {
-    .item-services__title {
+    .services__text {
       @include text-768;
     }
     .services__title {

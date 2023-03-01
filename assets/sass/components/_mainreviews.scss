@@ -31,9 +31,8 @@
 //     }
 // }
 .reviews {
-  .carousel {
-    margin-top: 10px;
-  }
+  @include margin-top-block;
+
   .carousel-inner {
     height: 250px;
   }
@@ -41,13 +40,28 @@
     color: $color;
     top: 100%;
   }
-  .reviews_title {
-    padding-top: 5%;
+  .reviews__title {
+    @include margin-top-title;
     @include flex-ctr;
     @include title;
   }
   p,
   h4 {
     @include text;
+  }
+  @media screen and (max-width: 992px) {
+    p,
+    h4 {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    p,
+    h4 {
+      @include text-768;
+    }
+    .reviews_title {
+      @include title-768;
+    }
   }
 }

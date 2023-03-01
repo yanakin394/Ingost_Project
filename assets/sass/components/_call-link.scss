@@ -3,7 +3,7 @@
   @include background;
   background-color: #06ada223;
   @include flex-ctr;
-  min-height: 400px;
+  @include margin-top-block;
 
   .call-link__wrapper {
     background: rgba(255, 255, 255, 0.7);

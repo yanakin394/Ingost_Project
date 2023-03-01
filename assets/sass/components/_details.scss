@@ -1,53 +1,83 @@
 .details {
-  margin-top: 100px;
+  @include margin-top-block;
   background: #4dbca914;
-}
-.details__container {
-  max-width: 85%;
-  margin: 0 auto;
-  font-family: "Cormorant Garamond", serif;
-  color: $color;
-}
-.details__title {
-  font-size: 48px;
-  text-align: center;
-}
-.details__title::after {
-  content: "";
-  background-image: url(../../images/icons/details_list.png);
-  height: 40px;
-  width: 40px;
-  top: 0;
-  left: 0;
-}
-.details__item {
-  cursor: pointer;
-  border-bottom: 1px solid;
-}
-.item-details__title {
-  font-size: 30px;
-  padding: 10px 0;
-  list-style: none;
-  position: relative;
-  &::after {
-    content: "";
-    display: block;
-    background-image: url(../images/icons/details_anactive.png);
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    right: 0;
-    top: 23%;
-    height: 35px;
-    width: 35px;
+
+  .details__container {
+    @include container;
   }
-}
-.details__item[open] .item-details__title::after {
-  background-image: url(../images/icons/details_active.png);
-}
-.item-details__text {
-  font-size: 24px;
-}
-.item-details__text_bold {
-  font-weight: 700;
+  .details__title {
+    @include title;
+    text-align: center;
+  }
+  .details__body {
+    @include margin-top-title;
+  }
+  .details__title::after {
+    content: "";
+    background-image: url(../../images/icons/details_list.png);
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+  }
+  .details__item {
+    cursor: pointer;
+    border-bottom: 1px solid;
+  }
+  .item-details__title {
+    @include subtitle;
+    padding: 10px 0;
+    list-style: none;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      background-image: url(../images/icons/details_anactive.png);
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0;
+      top: 23%;
+      height: 35px;
+      width: 35px;
+    }
+  }
+  .details__item[open] .item-details__title::after {
+    background-image: url(../images/icons/details_active.png);
+  }
+  .item-details__text {
+    @include text;
+  }
+  .item-details__text_bold {
+    font-weight: 700;
+  }
+  @media screen and (min-width: 2500px) {
+    .details__container {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .item-details__text {
+      @include text-992;
+    }
+    .item-details__title {
+      @include subtitle-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .item-details__text {
+      @include text-768;
+    }
+    .item-details__title {
+      @include subtitle-768;
+    }
+    .details__title {
+      @include title-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .details__container {
+      @include container-576;
+    }
+  }
 }

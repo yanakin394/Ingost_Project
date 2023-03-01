@@ -1,6 +1,6 @@
 .footer {
   @include container;
-  padding-bottom: 2%;
+  @include margin-top-block;
 
   img {
     align-items: center;
@@ -13,13 +13,13 @@
     @include setka-footer;
     @include title;
     justify-content: center;
-    margin-bottom: 1%;
   }
   .footer__wrapper {
     display: grid;
     grid-template-areas: "footer__block-contacts footer__block-address";
     grid-template-columns: 1fr 1fr;
     gap: 2%;
+    @include margin-top-title;
   }
   .footer__block-contacts {
     display: flex;
