@@ -32,7 +32,17 @@
 // }
 .reviews {
   @include margin-top-block;
+  position: relative;
+  // background-image: url(../images/photo/list.png);
+  // background-repeat: no-repeat;
+  // background-position: right bottom;
+  // background-size: auto;
 
+  .reviews__list {
+    position: absolute;
+    transform: translateY(-60%);
+    right: -10px;
+  }
   .carousel-inner {
     height: 250px;
   }
@@ -62,6 +72,9 @@
     }
     .reviews_title {
       @include title-768;
+    }
+    .reviews__list {
+      width: 180px;
     }
   }
 }

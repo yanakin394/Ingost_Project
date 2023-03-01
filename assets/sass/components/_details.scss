@@ -8,6 +8,7 @@
   .details__title {
     @include title;
     text-align: center;
+    padding-top: 2%;
   }
   .details__body {
     @include margin-top-title;

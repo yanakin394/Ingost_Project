@@ -2,10 +2,6 @@
   .main__img {
     @include flex-ctr;
     @include container;
-    // background-image: url(../images/photo/list.png);
-    // background-repeat: no-repeat;
-    // background-position: right bottom;
-    // background-size: auto;
   }
   .main__box-text {
     width: 65%;
@@ -38,14 +34,11 @@
   .main__title1 {
     @include flex-ctr;
     align-items: center;
-    @include margin-top-block;
+    padding-top: 2%;
+    @include margin-top-title;
     @include title;
   }
 
-  // .list {
-  //   width: 10%;
-  //   height: 20%;
-  // }
   .main__background {
     background: rgba(77, 188, 169, 0.0784313725);
   }
