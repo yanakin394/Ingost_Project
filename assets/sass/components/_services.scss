@@ -14,7 +14,8 @@ body {
     @include margin-top-title;
   }
   .services__container {
-    @include container;
+    max-width: 85%;
+    margin: 0 auto;
   }
   .services__title {
     text-align: center;
