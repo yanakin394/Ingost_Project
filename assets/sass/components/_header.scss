@@ -22,24 +22,23 @@ header {
     justify-content: space-evenly;
     align-content: flex-end;
   }
+  .header__tel-container {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    width: 100%;
+  }
   .header__link {
-    font-family: "CormorantGaramond-Regular", serif;
+    @include title;
     font-size: 38px;
-    color: $color;
-    padding-left: 3%;
     text-decoration: none;
   }
   .header__link:hover {
     color: #4dbcbc;
   }
   .header__text {
-    font-family: "CormorantGaramond-Regular", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    align-items: center;
+    @include text;
     text-align: right;
-    color: $color;
   }
   @media screen and (max-width: 950px) {
     align-items: flex-end;
@@ -51,13 +50,13 @@ header {
       margin: 0 0 0 0;
     }
     .header__text {
-      font-size: 20px;
+      @include text-992;
     }
     .header__link {
       font-size: 22px;
     }
     .header__icon {
-      max-width: 10%;
+      max-width: 70%;
       margin-left: 2%;
     }
   }

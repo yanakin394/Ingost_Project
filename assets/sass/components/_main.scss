@@ -107,4 +107,16 @@
       flex-wrap: wrap;
     }
   }
+  @media screen and (max-width: 360px) {
+    .main__text,
+    .main__text1 {
+      @include text-360;
+      text-align: center;
+    }
+    .main__title1,
+    .main__title {
+      @include title-360;
+      text-align: center;
+    }
+  }
 }
