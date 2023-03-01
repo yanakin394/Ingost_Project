@@ -1,57 +1,71 @@
-// @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Shantell+Sans&display=swap');
+body {
+  background: rgb(77 188 169 / 4%);
+}
 .services {
   position: relative;
-}
-.services__leaf {
-  position: absolute;
-  transform: translateY(-60%);
-  left: -30px;
-}
-.services__container {
-  @include container;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  color: $color;
-}
-.services__title {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 60px;
-}
-.services__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -60px;
-  justify-content: center;
-}
-.services__column {
-  flex: 0 1 25%;
-  display: flex;
-  justify-content: center;
-  padding: 0 60px;
-  margin-bottom: 70px;
-}
-.services__item {
-  text-align: center;
-}
-.item-services__row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 233px;
-}
-.item-services__picture {
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-}
-.item-services__picture:hover {
-  width: 90px;
-  height: 90px;
-}
-.item-services__title {
-  text-align: center;
-  font-size: 30px;
+  .services__leaf {
+    position: absolute;
+    transform: translateY(-60%);
+    left: -30px;
+  }
+  .services__container {
+    @include container;
+  }
+  .services__title {
+    text-align: center;
+    @include title;
+    margin-bottom: 60px;
+  }
+  .services__row {
+    @include flex-ctr;
+    flex-wrap: wrap;
+    margin: 0 -60px;
+  }
+  .services__column {
+    flex: 0 1 25%;
+    @include flex-ctr;
+    padding: 0 60px;
+    margin-bottom: 70px;
+  }
+  .services__item {
+    text-align: center;
+  }
+  .item-services__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 233px;
+  }
+  .item-services__picture {
+    width: 80px;
+    height: 80px;
+    @include flex-ctr;
+  }
+  .item-services__title {
+    text-align: center;
+    @include text;
+  }
+  @media screen and (min-width: 2500px) {
+    .services__container {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .item-services__title {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .item-services__title {
+      @include text-768;
+    }
+    .services__title {
+      @include title-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .services__container {
+      @include container-576;
+    }
+  }
 }

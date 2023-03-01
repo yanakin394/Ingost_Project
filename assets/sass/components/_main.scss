@@ -1,82 +1,116 @@
 .main {
   .main__img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex-ctr;
+    @include container;
     // background-image: url(../images/photo/list.png);
     // background-repeat: no-repeat;
     // background-position: right bottom;
+    // background-size: auto;
   }
-  .main__img-container {
-    display: grid;
-    grid-template-areas:
-      "kitchen scoop"
-      "lemon scoop";
-  }
-  .kitchen {
-    grid-area: kitchen;
-  }
-  .lemon {
-    grid-area: lemon;
-    padding-top: 5%;
-  }
-  .scoop {
-    grid-area: scoop;
-    margin-left: 5%;
-  }
-  .main__text {
-    padding-left: 5%;
+  .main__box-text {
+    width: 65%;
+    @include flex-ctr;
+    flex-direction: column;
   }
   .main__title {
     @include title;
   }
-  .main__text-text {
-    padding-top: 5%;
-    flex-direction: column;
+  .main__two,
+  .main__box-img {
     @include flex-ctr;
+    flex-direction: column;
+  }
+  .kitchen,
+  .lemon {
+    width: 100%;
+    padding: 5px;
+  }
+  .scoop {
+    width: 100%;
+    padding: 5px;
+  }
+  .main__text,
+  .main__text1 {
+    padding: 10px;
+    align-items: center;
     @include text;
   }
   .main__title1 {
-    display: flex;
-    justify-content: center;
+    @include flex-ctr;
     align-items: center;
     margin-top: 3%;
     @include title;
   }
-  .list {
-    width: 10%;
-    height: 20%;
-  }
-  .main__advantages {
-    background: #4dbca914;
+
+  // .list {
+  //   width: 10%;
+  //   height: 20%;
+  // }
+  .main__background {
+    background: rgba(77, 188, 169, 0.0784313725);
   }
   .main__container1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 15px;
-    padding: 15px;
+    flex-wrap: wrap;
     @include container;
   }
-  .main__responsibillity {
-    @include galochka-main;
-  }
-  .main__guarantee {
-    @include galochka-main;
-  }
-
-  .main__equipment {
-    @include galochka-main;
-  }
+  .main__responsibillity,
+  .main__guarantee,
+  .main__equipment,
   .main__materials {
     @include galochka-main;
   }
   .galochka {
     width: 45px;
   }
-  .main__text1 {
-    text-align: center;
-    @include text;
+  @media screen and (min-width: 2500px) {
+    .main__img,
+    .main__container1 {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    .main__box-text {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .main__text,
+    .main__text1 {
+      @include text-992;
+    }
+    .scoop {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main__text,
+    .main__text1 {
+      @include text-768;
+    }
+    .main__title1,
+    .main__title {
+      @include title-768;
+    }
+    .main__img {
+      flex-direction: column;
+    }
+    .lemon {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .main__img,
+    .main__container1 {
+      @include container-576;
+    }
+  }
+  @media (max-width: 550) {
+    .main__container1 {
+      flex-wrap: wrap;
+    }
   }
 }
