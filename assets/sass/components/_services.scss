@@ -25,16 +25,17 @@ body {
   .services__row {
     @include flex-ctr;
     flex-wrap: wrap;
-    margin: 0 -60px;
+    margin: 0 -4.2%;
   }
   .services__column {
     flex: 0 1 25%;
     @include flex-ctr;
-    padding: 0 60px;
+    padding: 0 4.2%;
     margin-bottom: 70px;
   }
   .services__item {
     text-align: center;
+    width: 214px;
   }
   .services__inner {
     display: flex;
@@ -43,8 +44,8 @@ body {
     max-width: 233px;
   }
   .services__picture {
-    width: 80px;
-    height: 80px;
+    width: 86px;
+    height: 86px;
     @include flex-ctr;
   }
   .services__text {
@@ -61,6 +62,11 @@ body {
       @include text-992;
     }
   }
+  @media screen and (max-width: 870px) {
+    .services__leaf {
+      width: 25%;
+    }
+  }
   @media screen and (max-width: 768px) {
     .services__text {
       @include text-768;
@@ -72,6 +78,29 @@ body {
   @media screen and (max-width: 576px) {
     .services__container {
       @include container-576;
+    }
+    .services__leaf {
+      display: none;
+    }
+    .services__row {
+      margin: 0;
+    }
+    .services__column {
+      padding: 0;
+    }
+    .services__text {
+      @include text-576;
+    }
+    .services__title {
+      @include title-576;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .services__text {
+      @include text-360;
+    }
+    .services__title {
+      @include title-360;
     }
   }
 }

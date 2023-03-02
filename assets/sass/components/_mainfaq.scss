@@ -66,5 +66,27 @@
     .faqs__wrapper {
       @include container-576;
     }
+    .faqs__text {
+      @include text-576;
+    }
+    .faqs__title {
+      @include title-576;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-576;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .faqs__text {
+      @include text-360;
+    }
+    .faqs__title {
+      @include title-360;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-360;
+    }
   }
 }

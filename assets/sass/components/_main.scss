@@ -70,14 +70,14 @@
     .main__box-text {
       width: 90%;
     }
+    .scoop {
+      display: none;
+    }
   }
   @media screen and (max-width: 992px) {
     .main__text,
     .main__text1 {
       @include text-992;
-    }
-    .scoop {
-      display: none;
     }
   }
   @media screen and (max-width: 768px) {
@@ -95,11 +95,22 @@
     .lemon {
       display: none;
     }
+    .main__box-text {
+      width: 100%;
+    }
   }
   @media screen and (max-width: 576px) {
     .main__img,
     .main__container1 {
       @include container-576;
+    }
+    .main__text,
+    .main__text1 {
+      @include text-576;
+    }
+    .main__title1,
+    .main__title {
+      @include title-576;
     }
   }
   @media (max-width: 550) {

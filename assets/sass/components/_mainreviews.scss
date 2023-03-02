@@ -1,50 +1,14 @@
-// .wrapper{
-//     color: $color;
-//     .wrapper__review {
-//         display: grid;
-//         grid-template-columns: 1fr 1fr;
-//         grid-template-rows: 5% 90%;
-//         grid-template-areas:
-//         "img name"
-//         "img text";
-//         justify-items: center;
-//         align-content: space-evenly;
-//     }
-//     .wrapper__review_name {
-//         grid-area: name;
-//         font-weight: bold;
-//         padding-top: 5%;
-//         padding-left: 5%;
-//         padding-right: 5%;
-//     }
-//     .wrapper__review_text {
-//         grid-area: text;
-//         padding-top: 5%;
-//         padding-left: 5%;
-//         padding-right: 5%;
-//     }
-//     img {
-//         width: 100%;
-//         padding-top: 5%;
-//         padding-left: 5%;
-//         padding-right: 5%;
-//     }
-// }
 .reviews {
   @include margin-top-block;
   position: relative;
-  // background-image: url(../images/photo/list.png);
-  // background-repeat: no-repeat;
-  // background-position: right bottom;
-  // background-size: auto;
 
   .reviews__list {
     position: absolute;
     transform: translateY(-60%);
-    right: -10px;
+    right: 0px;
   }
   .carousel-inner {
-    height: 250px;
+    height: 500px;
   }
   .carousel-caption {
     color: $color;
@@ -55,20 +19,26 @@
     @include flex-ctr;
     @include title;
   }
-  p,
-  h4 {
+  p {
     @include text;
   }
+  h4 {
+    @include subtitle;
+  }
   @media screen and (max-width: 992px) {
-    p,
-    h4 {
+    p {
       @include text-992;
+    }
+    h4 {
+      @include subtitle-992;
     }
   }
   @media screen and (max-width: 768px) {
-    p,
-    h4 {
+    p {
       @include text-768;
+    }
+    h4 {
+      @include subtitle-768;
     }
     .reviews_title {
       @include title-768;
