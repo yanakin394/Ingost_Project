@@ -4,7 +4,7 @@ You may check the website following the link <br/>
 ...link... <br/>
 
 We have used following technologies and tools: <br/>
-HTML, CSS, SASS, Bootstrap 5.0 framework <br/>
+##### HTML, CSS, SASS, Bootstrap 5.0 framework <br/>
 
 ### Developer team: <br/>
 Dinara Knyazeva https://github.com/DinaraKnyazeva, <br/>
