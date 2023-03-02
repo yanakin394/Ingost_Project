@@ -1,23 +1,11 @@
-@font-face {
-  font-family: "Cormorant Garamond", serif;
-  src: url(../../fonts/CormorantGaramond-SemiBold.ttf);
-  font-weight: 600;
-  font-style: normal;
-  font-size: 36px;
-}
-.footer p,
-.footer__phone-link {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: calc(24px + 6 * (100vw / 1920));
-  color: $color;
-  padding-left: 5%;
-}
-.footer__title {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: calc(30px + 14 * (100vw / 1920));
-  color: $color;
-}
+// @font-face {
+//   font-family: "Cormorant Garamond", serif;
+//   src: url(../../fonts/CormorantGaramond-SemiBold.ttf);
+//   font-weight: 600;
+//   font-style: normal;
+//   font-size: 36px;
+// }
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Shantell+Sans&display=swap");
+// :root {
+//     --bs-body-font-family: 'Cormorant Garamond', serif;
+// }

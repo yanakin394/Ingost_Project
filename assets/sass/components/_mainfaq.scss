@@ -1,0 +1,96 @@
+.faqs {
+  @include margin-top-block;
+  .faqs__title {
+    text-align: center;
+    @include title;
+  }
+  .accordion {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    --bs-accordion-active-color: none;
+    --bs-accordion-btn-focus-border-color: #4dbca991;
+    --bs-accordion-btn-focus-box-shadow: none;
+  }
+  .accordion-button {
+    background: rgba(77, 188, 169, 0.0784313725);
+  }
+  .accordion-item {
+    color: $color;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .faqs__wrapper {
+    @include container;
+    @include margin-top-title;
+  }
+  h2,
+  .faqs__subtitle {
+    @include subtitle;
+  }
+  li,
+  .faqs__text {
+    @include text;
+  }
+  .faqs__backgraund,
+  .faqs__text {
+    background: rgb(77 188 169 / 4%);
+  }
+  @media screen and (min-width: 2500px) {
+    .faqs__wrapper {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    li,
+    .faqs__text {
+      @include text-992;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    li,
+    .faqs__text {
+      @include text-768;
+    }
+    .faqs__title {
+      @include title-768;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .faqs__wrapper {
+      @include container-576;
+    }
+    li,
+    .faqs__text {
+      @include text-576;
+    }
+    .faqs__title {
+      @include title-576;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-576;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    li,
+    .faqs__text {
+      @include text-360;
+    }
+    .faqs__title {
+      @include title-360;
+    }
+    h2,
+    .faqs__subtitle {
+      @include subtitle-360;
+    }
+  }
+}

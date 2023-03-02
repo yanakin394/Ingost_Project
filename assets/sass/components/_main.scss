@@ -1,0 +1,133 @@
+.main {
+  .main__img {
+    @include flex-ctr;
+    @include container;
+  }
+  .main__box-text {
+    width: 65%;
+    @include flex-ctr;
+    flex-direction: column;
+  }
+  .main__title {
+    @include title;
+  }
+  .main__two,
+  .main__box-img {
+    @include flex-ctr;
+    flex-direction: column;
+  }
+  .kitchen,
+  .lemon {
+    width: 100%;
+    padding: 5px;
+  }
+  .scoop {
+    width: 100%;
+    padding: 5px;
+  }
+  .main__text,
+  .main__text1 {
+    padding: 10px;
+    align-items: center;
+    @include text;
+  }
+  .main__title1 {
+    @include flex-ctr;
+    align-items: center;
+    padding-top: 2%;
+    @include margin-top-title;
+    @include title;
+  }
+
+  .main__background {
+    background: rgba(77, 188, 169, 0.0784313725);
+  }
+  .main__container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include container;
+    @include margin-top-title;
+  }
+  .main__responsibillity,
+  .main__guarantee,
+  .main__equipment,
+  .main__materials {
+    @include galochka-main;
+  }
+  .galochka {
+    width: 45px;
+  }
+  @media screen and (min-width: 2500px) {
+    .main__img,
+    .main__container1 {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    .main__box-text {
+      width: 90%;
+    }
+    .scoop {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .main__text,
+    .main__text1 {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main__text,
+    .main__text1 {
+      @include text-768;
+    }
+    .main__title1,
+    .main__title {
+      @include title-768;
+    }
+    .main__img {
+      flex-direction: column;
+    }
+    .lemon {
+      display: none;
+    }
+    .main__box-text {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .main__img,
+    .main__container1 {
+      @include container-576;
+    }
+    .main__text,
+    .main__text1 {
+      @include text-576;
+    }
+    .main__title1,
+    .main__title {
+      @include title-576;
+    }
+  }
+  @media (max-width: 550) {
+    .main__container1 {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .main__text,
+    .main__text1 {
+      @include text-360;
+      text-align: center;
+    }
+    .main__title1,
+    .main__title {
+      @include title-360;
+      text-align: center;
+    }
+  }
+}

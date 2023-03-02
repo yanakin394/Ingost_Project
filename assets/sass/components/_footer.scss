@@ -1,25 +1,30 @@
 .footer {
-  width: 70%;
-  margin: 0 auto;
+  @include container;
+  @include margin-top-block;
 
   img {
     align-items: center;
   }
+  p {
+    padding-left: 5%;
+    @include text;
+  }
   .footer__title {
-    @include setka-footer;
-    justify-content: center;
+    @include title;
+    text-align: center;
   }
   .footer__wrapper {
     display: grid;
     grid-template-areas: "footer__block-contacts footer__block-address";
     grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
     gap: 2%;
+    @include margin-top-title;
   }
   .footer__block-contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 2%;
     grid-area: footer__block-contacts;
   }
   .footer__phone,
@@ -29,26 +34,31 @@
   }
   .footer__phone-link {
     text-decoration: none;
+    padding-left: 5%;
+    @include text;
+  }
+  .footer__phone-link:hover {
+    color: #4dbcbc;
   }
   .footer__socials {
     @include setka-footer;
     justify-content: space-evenly;
     margin-bottom: 0;
-    width: 70%;
   }
   .footer__instagram,
   .footer__vk,
   .footer__telegram {
     @include icon-footer;
     @include setka-footer;
+    margin-right: 10px;
   }
   .footer__block-address {
     grid-area: footer__block-address;
   }
   .footer__map {
-    width: 70%;
+    width: 90%;
     height: 200px;
-    border-radius: 10%;
+    border-radius: 50px;
   }
   .footer__button-up {
     position: fixed;
@@ -69,9 +79,43 @@
   .footer__telegram:hover {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
   }
+  @media screen and (min-width: 2500px) {
+    @include container-2500;
+  }
+  @media screen and (max-width: 992px) {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+    .footer__icon-up {
+      height: 90px;
+      width: 90px;
+    }
+    .footer__instagram,
+    .footer__vk,
+    .footer__telegram {
+      width: 60px;
+      height: 60px;
+    }
+    p,
+    .footer__phone-link {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .footer__map {
+      height: 120px;
+    }
+    .footer__title {
+      @include title-768;
+    }
+    p,
+    .footer__phone-link {
+      @include text-768;
+    }
+  }
   @media screen and (max-width: 576px) {
-    width: 90%;
-    margin: 0 auto;
+    @include container-576;
 
     img {
       width: 30px;
@@ -86,12 +130,10 @@
       grid-template-columns: 1fr;
     }
     .footer__map-inner {
-      display: flex;
-      justify-content: center;
+      @include flex-ctr;
     }
     .footer__socials {
-      width: 70%;
-      margin: 0 auto;
+      @include container;
     }
     .footer__instagram,
     .footer__vk,
@@ -104,22 +146,34 @@
     .footer__address {
       margin: 3%;
     }
-    .footer__title {
-      font-weight: 500;
-      font-size: calc(30px + (14 + 14 * 0.7) * ((100vw - 576px) / 1920));
-    }
-    p,
-    .footer__phone-link {
-      font-weight: 200;
-      font-size: calc(24px + (6 + 6 * 0.7) * ((100vw - 576px) / 1920));
-    }
     .footer__icon-up {
       height: 80px;
       width: 80px;
     }
+    .footer__map {
+      height: 180px;
+    }
+    .footer__title {
+      @include title-576;
+    }
+    p,
+    .footer__phone-link {
+      @include text-576;
+    }
   }
-  @media screen and (min-width: 2500px) {
-    width: 50%;
-    margin: 0 auto;
+  @media screen and (max-width: 360px) {
+    .footer__title {
+      @include title-360;
+    }
+    p,
+    .footer__phone-link {
+      @include text-360;
+    }
+  }
+  @media screen and (max-width: 175px) {
+    img,
+    .footer__map {
+      display: none;
+    }
   }
 }

@@ -1,0 +1,112 @@
+header {
+  width: 100%;
+  margin-top: 2%;
+  color: $color;
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header__logo {
+    width: 25%;
+    object-fit: contain;
+    margin-top: -30px;
+  }
+  .header__subcontainer {
+    width: 40%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-end;
+  }
+  .header__tel-container {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+    width: 100%;
+    align-items: center;
+    margin: 1%;
+  }
+  .header__link {
+    @include title;
+    text-decoration: none;
+    margin-left: 2%;
+  }
+  .header__link:hover {
+    color: #4dbcbc;
+  }
+  .header__text {
+    @include text;
+    text-align: right;
+    padding-top: 2%;
+  }
+  .header__icon {
+    margin-bottom: -20px;
+  }
+  @media screen and (max-width: 992px) {
+    align-items: flex-end;
+    margin: 0 auto;
+    .header__subcontainer {
+      align-items: flex-end;
+    }
+    .header__logo {
+      margin: 0 0 0 0;
+    }
+    .header__text {
+      @include text-992;
+    }
+    .header__icon {
+      max-width: 40px;
+      margin-left: 2%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .header__text {
+      @include text-768;
+    }
+    .header__icon {
+      max-width: 35px;
+    }
+    .header__link {
+      @include title-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .header__subcontainer {
+      margin-top: 0;
+    }
+    .header__text {
+      @include text-576;
+    }
+    .header__link {
+      @include subtitle-576;
+      margin-left: 6%;
+    }
+    .header__logo {
+      width: 30%;
+    }
+    .header__icon {
+      max-width: 25px;
+      margin-bottom: -10px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .header__link {
+      @include subtitle-360;
+      margin-left: 12%;
+    }
+    .header__text {
+      @include text-360;
+    }
+    .header__logo {
+      width: 40%;
+    }
+    .header__icon {
+      max-width: 15px;
+      margin-bottom: -5px;
+    }
+  }
+}

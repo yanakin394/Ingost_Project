@@ -1,0 +1,82 @@
+.call-link {
+  background: url("../images/background2.jpg");
+  @include background;
+  background-color: #06ada223;
+  @include flex-ctr;
+  @include margin-top-block;
+
+  .call-link__wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    width: 30%;
+    min-height: 100px;
+    margin: 5% 0 20% 0;
+    flex-direction: column;
+    @include flex-ctr;
+  }
+  .call-link__text {
+    text-align: center;
+    padding: 8% 0 8% 0;
+    @include subtitle;
+  }
+  .call-link__box-button {
+    @include flex-ctr;
+    padding: 1% 0 5% 0;
+  }
+  .call-link__button {
+    background: $bacground-color;
+    text-decoration: none;
+    text-align: center;
+    @include text;
+    color: #ffffff;
+    padding: 1% 2% 1% 2%;
+  }
+  @media screen and (max-width: 992px) {
+    .call-link__text {
+      @include subtitle-992;
+    }
+    .call-link__button {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .call-link__text {
+      @include subtitle-768;
+    }
+    .call-link__button {
+      @include text-768;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    background: url("../images/background2small.jpg");
+    @include background;
+    background-size: 100% auto;
+    min-height: auto;
+
+    .call-link__wrapper {
+      width: 70%;
+      max-height: 50%;
+      margin: 5% 0 5% 0;
+      min-height: 0;
+    }
+    .call-link__text {
+      padding: 0;
+      @include subtitle-576;
+    }
+    .call-link__button {
+      @include text-576;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .call-link__text {
+      @include subtitle-360;
+    }
+    .call-link__button {
+      @include text-360;
+    }
+  }
+  @media screen and (max-width: 175px) {
+    .call-link__text {
+      display: none;
+    }
+  }
+}
