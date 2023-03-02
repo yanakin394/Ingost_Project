@@ -2,7 +2,7 @@
 
 You may check the website following the link <br/>
 ...link... <br/>
-
+<br/>
 We have used following technologies and tools: <br/>
 ##### HTML, CSS, SASS, Bootstrap 5.0 framework <br/>
 
