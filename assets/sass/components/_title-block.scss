@@ -81,5 +81,9 @@
     .title-block__list-item {
       @include text-360;
     }
+    .title-block__list,
+    .title-block__colon {
+      display: none;
+    }
   }
 }

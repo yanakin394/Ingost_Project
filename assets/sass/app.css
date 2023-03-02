@@ -313,6 +313,7 @@ template {
   width: 70%;
   margin: 0 auto;
   margin-top: 7%;
+  padding-bottom: 12%;
 }
 .footer img {
   align-items: center;
@@ -653,9 +654,9 @@ header .header__icon {
 }
 @media screen and (max-width: 360px) {
   header .header__link {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
     margin-left: 12%;
   }
   header .header__text {
@@ -667,8 +668,8 @@ header .header__icon {
     width: 40%;
   }
   header .header__icon {
-    max-width: 15px;
-    margin-bottom: -5px;
+    max-width: 10px;
+    margin-bottom: 2px;
   }
 }
 
@@ -800,6 +801,10 @@ header .header__icon {
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
+  }
+  .title-block .title-block__list,
+  .title-block .title-block__colon {
+    display: none;
   }
 }
 

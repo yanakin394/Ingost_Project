@@ -95,7 +95,7 @@ header {
   }
   @media screen and (max-width: 360px) {
     .header__link {
-      @include subtitle-360;
+      @include text-360;
       margin-left: 12%;
     }
     .header__text {
@@ -105,8 +105,8 @@ header {
       width: 40%;
     }
     .header__icon {
-      max-width: 15px;
-      margin-bottom: -5px;
+      max-width: 10px;
+      margin-bottom: 2px;
     }
   }
 }
