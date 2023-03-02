@@ -4,7 +4,7 @@
 Our team designed a website for a customer who provides cleaning services.
 
 You may check the website following the link <br/>
-(https://yanakin394.github.io/Ingost_Project/) <br/>
+https://yanakin394.github.io/Ingost_Project/ <br/>
 
 ## Technologies used: <br/>
 HTML, CSS, SCSS, Bootstrap 5.0 framework, BEM <br/>
