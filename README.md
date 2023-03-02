@@ -3,7 +3,7 @@
 You may check the website following the link <br/>
 ...link... <br/>
 
-##### Technologies used: <br/>
+#### Technologies used: <br/>
 HTML, CSS, SASS, Bootstrap 5.0 framework, BEM <br/>
 
 ### Developer team: <br/>
