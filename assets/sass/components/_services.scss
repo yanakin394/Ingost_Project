@@ -1,7 +1,6 @@
 body {
   background: rgb(77 188 169 / 4%);
 }
-
 .services {
   position: relative;
   @include margin-top-block;
@@ -41,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 233px;
+    max-width: 100%;
   }
   .services__picture {
     width: 86px;
@@ -87,12 +86,16 @@ body {
     }
     .services__column {
       padding: 0;
+      margin-bottom: 10%;
     }
     .services__text {
       @include text-576;
     }
     .services__title {
       @include title-576;
+    }
+    .services__item {
+      width: 100px;
     }
   }
   @media screen and (max-width: 360px) {
@@ -101,6 +104,10 @@ body {
     }
     .services__title {
       @include title-360;
+    }
+    .services__picture {
+      width: 50px;
+      height: 50px;
     }
   }
 }

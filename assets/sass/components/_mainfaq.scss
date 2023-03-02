@@ -1,7 +1,7 @@
 .faqs {
   @include margin-top-block;
   .faqs__title {
-    @include flex-ctr;
+    text-align: center;
     @include title;
   }
   .accordion {
@@ -42,6 +42,7 @@
     }
   }
   @media screen and (max-width: 992px) {
+    li,
     .faqs__text {
       @include text-992;
     }
@@ -51,6 +52,7 @@
     }
   }
   @media screen and (max-width: 768px) {
+    li,
     .faqs__text {
       @include text-768;
     }
@@ -66,6 +68,7 @@
     .faqs__wrapper {
       @include container-576;
     }
+    li,
     .faqs__text {
       @include text-576;
     }
@@ -78,6 +81,7 @@
     }
   }
   @media screen and (max-width: 360px) {
+    li,
     .faqs__text {
       @include text-360;
     }

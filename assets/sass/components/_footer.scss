@@ -10,9 +10,8 @@
     @include text;
   }
   .footer__title {
-    @include setka-footer;
     @include title;
-    justify-content: center;
+    text-align: center;
   }
   .footer__wrapper {
     display: grid;
@@ -153,6 +152,28 @@
     }
     .footer__map {
       height: 180px;
+    }
+    .footer__title {
+      @include title-576;
+    }
+    p,
+    .footer__phone-link {
+      @include text-576;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .footer__title {
+      @include title-360;
+    }
+    p,
+    .footer__phone-link {
+      @include text-360;
+    }
+  }
+  @media screen and (max-width: 175px) {
+    img,
+    .footer__map {
+      display: none;
     }
   }
 }

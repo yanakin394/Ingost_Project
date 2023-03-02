@@ -40,11 +40,39 @@
     h4 {
       @include subtitle-768;
     }
-    .reviews_title {
+    .reviews__title {
       @include title-768;
     }
     .reviews__list {
       width: 180px;
+    }
+    .carousel-inner {
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    p {
+      @include text-576;
+    }
+    h4 {
+      @include subtitle-576;
+    }
+    .reviews__title {
+      @include title-576;
+    }
+    .reviews__list {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    p {
+      @include text-360;
+    }
+    h4 {
+      @include subtitle-360;
+    }
+    .reviews__title {
+      @include title-360;
     }
   }
 }

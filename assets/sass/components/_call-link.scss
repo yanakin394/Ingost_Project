@@ -14,7 +14,6 @@
     @include flex-ctr;
   }
   .call-link__text {
-    align-items: center;
     text-align: center;
     padding: 8% 0 8% 0;
     @include subtitle;
@@ -37,7 +36,6 @@
     }
     .call-link__button {
       @include text-992;
-      color: #ffffff;
     }
   }
   @media screen and (max-width: 768px) {
@@ -46,7 +44,6 @@
     }
     .call-link__button {
       @include text-768;
-      color: #ffffff;
     }
   }
   @media screen and (max-width: 576px) {
@@ -63,23 +60,18 @@
     }
     .call-link__text {
       padding: 0;
+      @include subtitle-576;
     }
-    .call-link__text {
-      padding-left: 0;
+    .call-link__button {
+      @include text-576;
     }
   }
-  @media screen and (max-width: 320px) {
-    .call-link__button {
-      font-weight: 100;
-      font-size: 0.8em;
-      line-height: 20px;
-      padding: 1% 2% 1% 2%;
-    }
+  @media screen and (max-width: 360px) {
     .call-link__text {
-      font-weight: 100;
-      font-size: 16px;
-      padding-left: 0;
-      line-height: 20px;
+      @include subtitle-360;
+    }
+    .call-link__button {
+      @include text-360;
     }
   }
   @media screen and (max-width: 175px) {
