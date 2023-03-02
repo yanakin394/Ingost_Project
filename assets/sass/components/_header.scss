@@ -59,7 +59,7 @@ header {
       @include text-992;
     }
     .header__icon {
-      max-width: 70%;
+      max-width: 40px;
       margin-left: 2%;
     }
   }
@@ -68,7 +68,7 @@ header {
       @include text-768;
     }
     .header__icon {
-      max-width: 60%;
+      max-width: 35px;
     }
     .header__link {
       @include title-768;
@@ -88,6 +88,10 @@ header {
     .header__logo {
       width: 30%;
     }
+    .header__icon {
+      max-width: 25px;
+      margin-bottom: -10px;
+    }
   }
   @media screen and (max-width: 360px) {
     .header__link {
@@ -99,6 +103,10 @@ header {
     }
     .header__logo {
       width: 40%;
+    }
+    .header__icon {
+      max-width: 15px;
+      margin-bottom: -5px;
     }
   }
 }

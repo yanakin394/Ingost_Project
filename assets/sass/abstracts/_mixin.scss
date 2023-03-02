@@ -70,7 +70,7 @@
   line-height: 42px;
 }
 @mixin subtitle-576 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 26px;
   line-height: 32px;
 }
@@ -103,8 +103,8 @@
 }
 @mixin text-360 {
   font-weight: 300;
-  font-size: 16;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 18px;
 }
 @mixin container {
   width: 70%;
