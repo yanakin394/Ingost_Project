@@ -1,4 +1,7 @@
-# Ingost - website for cleaning services company.<br/>
+# Ingost - website for cleaning services company. <br/>
+*(our student 2nd project for a real customer after 8 weeks of studying HTML/CSS/SASS)*
+
+Our team designed a website for a customer who provides cleaning services.
 
 You may check the website following the link <br/>
 ...link... <br/>
