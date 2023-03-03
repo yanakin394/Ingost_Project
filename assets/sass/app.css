@@ -1108,7 +1108,8 @@ body {
   }
 }
 
-.main .main__img {
+.main .main__img,
+.main .main__img-small {
   display: flex;
   justify-content: center;
   width: 70%;
@@ -1167,7 +1168,8 @@ body {
   color: #390303;
   line-height: 58px;
 }
-.main .main__background {
+.main .main__background,
+.main .main__background-small {
   background: rgba(77, 188, 169, 0.0784313725);
 }
 .main .main__container1 {
@@ -1192,8 +1194,13 @@ body {
 .main .galochka {
   width: 45px;
 }
+.main .main__img-small,
+.main .main__background-small {
+  padding-top: 6%;
+}
 @media screen and (min-width: 2500px) {
   .main .main__img,
+  .main .main__img-small,
   .main .main__container1 {
     width: 65%;
     margin: 0 auto;
@@ -1227,7 +1234,8 @@ body {
     font-size: 36px;
     line-height: 50px;
   }
-  .main .main__img {
+  .main .main__img,
+  .main .main__img-small {
     flex-direction: column;
   }
   .main .lemon {
@@ -1239,6 +1247,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .main .main__img,
+  .main .main__img-small,
   .main .main__container1 {
     width: 95%;
     margin: 0 auto;
@@ -1261,6 +1270,12 @@ body {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 359px) {
+  .main .main__img-small,
+  .main .main__background-small {
+    display: none;
+  }
+}
 @media screen and (max-width: 360px) {
   .main .main__text,
   .main .main__text1 {
@@ -1275,6 +1290,10 @@ body {
     font-size: 28px;
     line-height: 38px;
     text-align: center;
+  }
+  .main .main__img,
+  .main .main__background {
+    display: none;
   }
 }
 
