@@ -1196,7 +1196,7 @@ body {
 }
 .main .main__img-small,
 .main .main__background-small {
-  padding-top: 6%;
+  padding-top: 5%;
 }
 @media screen and (min-width: 2500px) {
   .main .main__img,
