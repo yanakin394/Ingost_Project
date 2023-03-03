@@ -1,75 +1,90 @@
 .title-block {
-    max-width: 100%;
-    height: 870px;
-    background-image: linear-gradient(to right, white 0%, transparent 100%), url(../images/title-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5%;
+  max-width: 100%;
+  height: 800px;
+  background-image: linear-gradient(to right, white 0%, transparent 100%),
+    url(../images/title-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 1% 0 5% 0;
+  .title-block__title {
+    @include title;
+    @include container;
+    padding-top: 3%;
+  }
+  .title-block__list,
+  p {
+    @include container;
+  }
+  .title-block__text {
+    @include subtitle;
+  }
+  .title-block__list-item {
+    @include text;
+  }
+  .title-block__list-item {
+    list-style-type: none;
+  }
+  @media screen and (min-width: 2500px) {
+    .title-block__title,
+    .title-block__list,
+    p {
+      @include container-2500;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    height: fit-content;
+    .title-block__text {
+      @include subtitle-992;
+    }
+    .title-block__list-item {
+      @include text-992;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    height: fit-content;
+    .title-block__text {
+      @include subtitle-768;
+    }
     .title-block__title {
-        margin-left: 113px;
-        font-family: 'Cormorant Garamond';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 56px;
-        color: $color;
-        padding-top: 3%;
-    }
-    .title-block__list {
-        margin-left: 113px;
-        padding-left: 0;
-    }
-    .title-block__text,
-    .title-block__list-item {
-        font-family: 'Cormorant Garamond';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 32px;
-        color: $color;
+      @include title-768;
     }
     .title-block__list-item {
-        list-style-type:none;
+      @include text-768;
     }
-    @media screen and (min-width: 1560px) {        
-        .title-block__list,
-        .title-block__title {
-            margin-left: 10%;
-        }
+  }
+  @media screen and (max-width: 576px) {
+    .title-block__title,
+    .title-block__list,
+    p {
+      @include container-576;
     }
-    @media screen and (max-width: 950px) {
-        height: fit-content;
-        .title-block__title {
-            font-size: 32px;
-        }
-        .title-block__text,
-        .title-block__list-item {
-        font-size: 18px;
-        }
+    .title-block__text {
+      @include subtitle-576;
     }
-    @media screen and (max-width: 564px) {
-        .title-block__title {
-            font-size: 24px;
-        }
-        .title-block__text,
-        .title-block__list-item {
-        font-size: 12px;
-        }
-        .title-block__title,
-        .title-block__list {
-            margin-left:3%;
-        }
+    .title-block__title {
+      @include title-576;
     }
-    @media screen and (max-width: 350px) {
-        .title-block__title {
-            font-size: 16px;
-            margin-bottom: 1%;
-        }
-        .title-block__text,
-        .title-block__list-item {
-        font-size: 8px;
-        }
-        .title-block__text {
-            margin-bottom: 2%;
-        }
+    .title-block__list-item {
+      @include text-576;
     }
+  }
+  @media screen and (max-width: 360px) {
+    height: 40vh;
+    .title-block__text {
+      @include subtitle-360;
+      margin-bottom: 2%;
+    }
+    .title-block__title {
+      @include title-360;
+      margin-bottom: 1%;
+    }
+    .title-block__list-item {
+      @include text-360;
+    }
+    .title-block__list,
+    .title-block__colon {
+      display: none;
+    }
+  }
 }
