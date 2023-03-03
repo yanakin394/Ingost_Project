@@ -785,6 +785,9 @@ header .header__icon {
   }
 }
 @media screen and (max-width: 360px) {
+  .title-block {
+    height: 40vh;
+  }
   .title-block .title-block__text {
     font-weight: 400;
     font-size: 22px;
@@ -1270,7 +1273,7 @@ body {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 359px) {
+@media screen and (min-width: 361px) {
   .main .main__img-small,
   .main .main__background-small {
     display: none;
