@@ -8,11 +8,14 @@
     right: 0px;
   }
   .carousel-inner {
-    height: 500px;
+    min-height: 500px;
   }
   .carousel-caption {
     color: $color;
     top: 100%;
+  }
+  .carousel-indicators {
+    position: relative;
   }
   .reviews__title {
     @include margin-top-title;
@@ -20,16 +23,20 @@
     @include title;
   }
   p {
-    @include text;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    color: $color;
   }
-  h4 {
+  h3 {
     @include subtitle;
   }
   @media screen and (max-width: 992px) {
     p {
       @include text-992;
     }
-    h4 {
+    h3 {
       @include subtitle-992;
     }
   }
@@ -37,7 +44,7 @@
     p {
       @include text-768;
     }
-    h4 {
+    h3 {
       @include subtitle-768;
     }
     .reviews__title {
@@ -47,14 +54,14 @@
       width: 180px;
     }
     .carousel-inner {
-      height: 350px;
+      min-height: 500px;
     }
   }
   @media screen and (max-width: 576px) {
     p {
       @include text-576;
     }
-    h4 {
+    h3 {
       @include subtitle-576;
     }
     .reviews__title {
@@ -68,7 +75,7 @@
     p {
       @include text-360;
     }
-    h4 {
+    h3 {
       @include subtitle-360;
     }
     .reviews__title {
