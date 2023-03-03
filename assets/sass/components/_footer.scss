@@ -1,6 +1,7 @@
 .footer {
   @include container;
   @include margin-top-block;
+  padding-bottom: 12%;
 
   img {
     align-items: center;
