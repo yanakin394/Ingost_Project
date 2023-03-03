@@ -3,7 +3,8 @@
   @include margin-top-block;
   padding-bottom: 12%;
 
-  img {
+  img,
+  svg {
     align-items: center;
   }
   p {
@@ -58,7 +59,7 @@
   }
   .footer__map {
     width: 90%;
-    height: 200px;
+    min-height: 200px;
     border-radius: 50px;
   }
   .footer__button-up {
@@ -71,6 +72,17 @@
     fill: #4dbca991;
     height: 100px;
     width: 100px;
+  }
+  .footer__container-img {
+    @include flex-ctr;
+  }
+  .footer__img {
+    height: 60%;
+    width: 60%;
+  }
+  .footer__icon {
+    height: 50px;
+    width: 130px;
   }
   .footer__button-up:hover > .footer__icon-up {
     fill: $bacground-color;
@@ -105,7 +117,7 @@
   }
   @media screen and (max-width: 768px) {
     .footer__map {
-      height: 120px;
+      min-height: 120px;
     }
     .footer__title {
       @include title-768;
@@ -118,7 +130,8 @@
   @media screen and (max-width: 576px) {
     @include container-576;
 
-    img {
+    img,
+    .footer__icon {
       width: 30px;
       height: 30px;
     }
@@ -152,7 +165,7 @@
       width: 80px;
     }
     .footer__map {
-      height: 180px;
+      min-height: 180px;
     }
     .footer__title {
       @include title-576;
@@ -172,7 +185,6 @@
     }
   }
   @media screen and (max-width: 175px) {
-    img,
     .footer__map {
       display: none;
     }

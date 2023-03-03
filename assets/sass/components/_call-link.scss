@@ -75,7 +75,8 @@
     }
   }
   @media screen and (max-width: 175px) {
-    .call-link__text {
+    .call-link__text,
+    img {
       display: none;
     }
   }
