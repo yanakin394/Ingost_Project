@@ -310,12 +310,13 @@ template {
 }
 
 .footer {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 7%;
   padding-bottom: 12%;
 }
-.footer img {
+.footer img,
+.footer svg {
   align-items: center;
 }
 .footer p {
@@ -396,7 +397,7 @@ template {
 }
 .footer .footer__map {
   width: 90%;
-  height: 200px;
+  min-height: 200px;
   border-radius: 50px;
 }
 .footer .footer__button-up {
@@ -409,6 +410,18 @@ template {
   fill: rgba(77, 188, 169, 0.568627451);
   height: 100px;
   width: 100px;
+}
+.footer .footer__container-img {
+  display: flex;
+  justify-content: center;
+}
+.footer .footer__img {
+  height: 60%;
+  width: 60%;
+}
+.footer .footer__icon {
+  height: 50px;
+  width: 130px;
 }
 .footer .footer__button-up:hover > .footer__icon-up {
   fill: #06ada3;
@@ -447,7 +460,7 @@ template {
 }
 @media screen and (max-width: 768px) {
   .footer .footer__map {
-    height: 120px;
+    min-height: 120px;
   }
   .footer .footer__title {
     font-weight: 500;
@@ -466,7 +479,8 @@ template {
     width: 95%;
     margin: 0 auto;
   }
-  .footer img {
+  .footer img,
+  .footer .footer__icon {
     width: 30px;
     height: 30px;
   }
@@ -481,7 +495,7 @@ template {
     justify-content: center;
   }
   .footer .footer__socials {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
   }
   .footer .footer__instagram,
@@ -500,7 +514,7 @@ template {
     width: 80px;
   }
   .footer .footer__map {
-    height: 180px;
+    min-height: 180px;
   }
   .footer .footer__title {
     font-weight: 500;
@@ -517,18 +531,17 @@ template {
 @media screen and (max-width: 360px) {
   .footer .footer__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
   }
   .footer p,
   .footer .footer__phone-link {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 175px) {
-  .footer img,
   .footer .footer__map {
     display: none;
   }
@@ -593,6 +606,8 @@ header .header__text {
 }
 header .header__icon {
   margin-bottom: -20px;
+  width: 50px;
+  height: 70px;
 }
 @media screen and (max-width: 992px) {
   header {
@@ -655,13 +670,13 @@ header .header__icon {
 @media screen and (max-width: 360px) {
   header .header__link {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
     margin-left: 12%;
   }
   header .header__text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
   header .header__logo {
@@ -689,13 +704,13 @@ header .header__icon {
   font-size: 48px;
   color: #390303;
   line-height: 58px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-top: 3%;
 }
 .title-block .title-block__list,
 .title-block p {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .title-block .title-block__text {
@@ -790,19 +805,19 @@ header .header__icon {
   }
   .title-block .title-block__text {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 30px;
     margin-bottom: 2%;
   }
   .title-block .title-block__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
     margin-bottom: 1%;
   }
   .title-block .title-block__list-item {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
   .title-block .title-block__list,
@@ -857,6 +872,7 @@ body {
 .services .services__item {
   text-align: center;
   width: 214px;
+  margin-right: 5px;
 }
 .services .services__inner {
   display: flex;
@@ -940,12 +956,12 @@ body {
 @media screen and (max-width: 360px) {
   .services .services__text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
   .services .services__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
   }
   .services .services__picture {
@@ -959,7 +975,7 @@ body {
   background: rgba(77, 188, 169, 0.0784313725);
 }
 .details .details__container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 5%;
 }
@@ -975,14 +991,6 @@ body {
   line-height: 58px;
   text-align: center;
   padding-top: 2%;
-}
-.details .details__title::after {
-  content: "";
-  background-image: url(../../images/icons/details_list.png);
-  height: 40px;
-  width: 40px;
-  top: 0;
-  left: 0;
 }
 .details .details__item {
   cursor: pointer;
@@ -1002,7 +1010,7 @@ body {
 .details .item-details__title::after {
   content: "";
   display: block;
-  background-image: url(../images/icons/details_anactive.png);
+  background-image: url(../images/details_anactive.png);
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1012,7 +1020,7 @@ body {
   width: 35px;
 }
 .details .details__item[open] .item-details__title::after {
-  background-image: url(../images/icons/details_active.png);
+  background-image: url(../images/details_active.png);
 }
 .details .item-details__text {
   font-family: "Cormorant Garamond", serif;
@@ -1096,17 +1104,17 @@ body {
   }
   .details .item-details__text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
   .details .item-details__title {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .details .details__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
   }
 }
@@ -1115,7 +1123,7 @@ body {
 .main .main__img-small {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .main .main__box-text {
@@ -1150,13 +1158,15 @@ body {
 .main .main__text,
 .main .main__text1 {
   padding: 10px;
-  align-items: center;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
   color: #390303;
   line-height: 44px;
+}
+.main .main__text1 {
+  text-align: center;
 }
 .main .main__title1 {
   display: flex;
@@ -1176,14 +1186,12 @@ body {
   background: rgba(77, 188, 169, 0.0784313725);
 }
 .main .main__container1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  justify-items: center;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 5%;
 }
 .main .main__responsibillity,
 .main .main__guarantee,
@@ -1192,10 +1200,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2%;
+  margin: 2%;
 }
 .main .galochka {
   width: 45px;
+  height: 45px;
 }
 .main .main__img-small,
 .main .main__background-small {
@@ -1207,6 +1216,13 @@ body {
   .main .main__container1 {
     width: 65%;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .main .main__container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1366px) {
@@ -1283,20 +1299,24 @@ body {
   .main .main__text,
   .main .main__text1 {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
     text-align: center;
   }
   .main .main__title1,
   .main .main__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
     text-align: center;
   }
   .main .main__img,
   .main .main__background {
     display: none;
+  }
+  .main .main__container1 {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1402,24 +1422,22 @@ body {
 @media screen and (max-width: 360px) {
   .call-link .call-link__text {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .call-link .call-link__button {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 175px) {
-  .call-link .call-link__text {
+  .call-link .call-link__text,
+  .call-link img {
     display: none;
   }
 }
 
-.faqs {
-  margin-top: 7%;
-}
 .faqs .faqs__title {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
@@ -1446,7 +1464,7 @@ body {
   margin-right: auto;
 }
 .faqs .faqs__wrapper {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 5%;
 }
@@ -1537,19 +1555,20 @@ body {
   .faqs li,
   .faqs .faqs__text {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
   .faqs .faqs__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
   }
   .faqs h2,
   .faqs .faqs__subtitle {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 30px;
+    font-size: 1.1em;
   }
 }
 
@@ -1563,11 +1582,17 @@ body {
   right: 0px;
 }
 .reviews .carousel-inner {
-  height: 500px;
+  min-height: 500px;
+  width: 80%;
+  margin: 0 auto;
 }
 .reviews .carousel-caption {
   color: #390303;
   top: 100%;
+  position: static;
+}
+.reviews .carousel-indicators {
+  position: relative;
 }
 .reviews .reviews__title {
   margin-top: 5%;
@@ -1588,7 +1613,7 @@ body {
   color: #390303;
   line-height: 44px;
 }
-.reviews h4 {
+.reviews h3 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
   font-style: normal;
@@ -1601,7 +1626,7 @@ body {
     font-size: 28px;
     line-height: 40px;
   }
-  .reviews h4 {
+  .reviews h3 {
     font-weight: 500;
     font-size: 32px;
     line-height: 45px;
@@ -1613,7 +1638,7 @@ body {
     font-size: 24px;
     line-height: 30px;
   }
-  .reviews h4 {
+  .reviews h3 {
     font-weight: 400;
     font-size: 28px;
     line-height: 42px;
@@ -1627,7 +1652,7 @@ body {
     width: 180px;
   }
   .reviews .carousel-inner {
-    height: 350px;
+    min-height: 500px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1636,7 +1661,7 @@ body {
     font-size: 20px;
     line-height: 28px;
   }
-  .reviews h4 {
+  .reviews h3 {
     font-weight: 300;
     font-size: 26px;
     line-height: 32px;
@@ -1653,17 +1678,17 @@ body {
 @media screen and (max-width: 360px) {
   .reviews p {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
   }
-  .reviews h4 {
+  .reviews h3 {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .reviews .reviews__title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.5em;
     line-height: 38px;
   }
 }/*# sourceMappingURL=app.css.map */

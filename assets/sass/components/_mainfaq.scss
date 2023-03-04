@@ -1,5 +1,4 @@
 .faqs {
-  @include margin-top-block;
   .faqs__title {
     text-align: center;
     @include title;
@@ -91,6 +90,7 @@
     h2,
     .faqs__subtitle {
       @include subtitle-360;
+      font-size: 1.1em;
     }
   }
 }
