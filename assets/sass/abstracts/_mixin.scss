@@ -48,7 +48,7 @@
 }
 @mixin title-360 {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.5em;
   line-height: 38px;
 }
 @mixin subtitle {
@@ -76,7 +76,7 @@
 }
 @mixin subtitle-360 {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 30px;
 }
 @mixin text {
@@ -103,7 +103,7 @@
 }
 @mixin text-360 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 18px;
 }
 @mixin container {

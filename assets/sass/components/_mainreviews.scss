@@ -9,10 +9,12 @@
   }
   .carousel-inner {
     min-height: 500px;
+    @include container;
   }
   .carousel-caption {
     color: $color;
     top: 100%;
+    position: static;
   }
   .carousel-indicators {
     position: relative;
