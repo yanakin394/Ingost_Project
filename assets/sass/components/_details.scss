@@ -14,14 +14,6 @@
     text-align: center;
     padding-top: 2%;
   }
-  .details__title::after {
-    content: "";
-    background-image: url(../../images/icons/details_list.png);
-    height: 40px;
-    width: 40px;
-    top: 0;
-    left: 0;
-  }
   .details__item {
     cursor: pointer;
     border-bottom: 1px solid;
@@ -34,7 +26,7 @@
     &::after {
       content: "";
       display: block;
-      background-image: url(../images/icons/details_anactive.png);
+      background-image: url(../images/details_anactive.png);
       position: absolute;
       background-repeat: no-repeat;
       background-size: cover;
@@ -45,7 +37,7 @@
     }
   }
   .details__item[open] .item-details__title::after {
-    background-image: url(../images/icons/details_active.png);
+    background-image: url(../images/details_active.png);
   }
   .item-details__text {
     @include text;

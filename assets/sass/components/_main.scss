@@ -29,8 +29,10 @@
   .main__text,
   .main__text1 {
     padding: 10px;
-    align-items: center;
     @include text;
+  }
+  .main__text1 {
+    text-align: center;
   }
   .main__title1 {
     @include flex-ctr;
@@ -45,13 +47,11 @@
     background: rgba(77, 188, 169, 0.0784313725);
   }
   .main__container1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    justify-items: center;
     @include container;
-    @include margin-top-title;
   }
   .main__responsibillity,
   .main__guarantee,
@@ -61,6 +61,7 @@
   }
   .galochka {
     width: 45px;
+    height: 45px;
   }
   .main__img-small,
   .main__background-small {
@@ -71,6 +72,13 @@
     .main__img-small,
     .main__container1 {
       @include container-2500;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    .main__container1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
   }
   @media screen and (max-width: 1366px) {
@@ -147,6 +155,10 @@
     .main__img,
     .main__background {
       display: none;
+    }
+    .main__container1 {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 }
