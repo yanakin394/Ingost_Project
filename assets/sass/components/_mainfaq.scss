@@ -90,6 +90,7 @@
     h2,
     .faqs__subtitle {
       @include subtitle-360;
+      font-size: 1.1em;
     }
   }
 }

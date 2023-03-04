@@ -805,7 +805,7 @@ header .header__icon {
   }
   .title-block .title-block__text {
     font-weight: 400;
-    font-size: 1.375em;
+    font-size: 1.3em;
     line-height: 30px;
     margin-bottom: 2%;
   }
@@ -1109,7 +1109,7 @@ body {
   }
   .details .item-details__title {
     font-weight: 400;
-    font-size: 1.375em;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .details .details__title {
@@ -1422,7 +1422,7 @@ body {
 @media screen and (max-width: 360px) {
   .call-link .call-link__text {
     font-weight: 400;
-    font-size: 1.375em;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .call-link .call-link__button {
@@ -1566,8 +1566,9 @@ body {
   .faqs h2,
   .faqs .faqs__subtitle {
     font-weight: 400;
-    font-size: 1.375em;
+    font-size: 1.3em;
     line-height: 30px;
+    font-size: 1.1em;
   }
 }
 
@@ -1682,7 +1683,7 @@ body {
   }
   .reviews h3 {
     font-weight: 400;
-    font-size: 1.375em;
+    font-size: 1.3em;
     line-height: 30px;
   }
   .reviews .reviews__title {
