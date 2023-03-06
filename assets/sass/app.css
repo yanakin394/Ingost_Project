@@ -378,7 +378,7 @@ template {
   justify-content: space-evenly;
   margin-bottom: 0;
 }
-.footer .footer__instagram,
+.footer .footer__whatsapp,
 .footer .footer__vk,
 .footer .footer__telegram {
   border-radius: 50%;
@@ -420,13 +420,16 @@ template {
   width: 60%;
 }
 .footer .footer__icon {
+  width: 50px;
   height: 50px;
+}
+.footer .footer__icon_big {
   width: 130px;
 }
 .footer .footer__button-up:hover > .footer__icon-up {
   fill: #06ada3;
 }
-.footer .footer__instagram:hover,
+.footer .footer__whatsapp:hover,
 .footer .footer__vk:hover,
 .footer .footer__telegram:hover {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
@@ -446,7 +449,7 @@ template {
     height: 90px;
     width: 90px;
   }
-  .footer .footer__instagram,
+  .footer .footer__whatsapp,
   .footer .footer__vk,
   .footer .footer__telegram {
     width: 60px;
@@ -498,7 +501,7 @@ template {
     width: 80%;
     margin: 0 auto;
   }
-  .footer .footer__instagram,
+  .footer .footer__whatsapp,
   .footer .footer__vk,
   .footer .footer__telegram {
     width: 50px;
