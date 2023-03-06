@@ -487,6 +487,9 @@ template {
     width: 30px;
     height: 30px;
   }
+  .footer .footer__icon_big {
+    width: 80px;
+  }
   .footer .footer__wrapper {
     display: grid;
     grid-template-areas: "footer__block-address" "footer__block-contacts";
