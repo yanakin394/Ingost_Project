@@ -8,7 +8,7 @@ https://yanakin394.github.io/Ingost_Project/ <br/>
 
 or<br/>
 
-##https://almetevsk-uborka.ru <br/>
+https://almetevsk-uborka.ru <br/>
 
 ## Technologies used: <br/>
 HTML, CSS, SCSS, Bootstrap 5.0 framework, BEM <br/>
