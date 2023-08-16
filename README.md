@@ -5,7 +5,7 @@
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
 
 ## Getting started
-Host the parent directory on the webserver
+<p>Host the parent directory on the webserver</p>
 
 ## Technologies:
 <div>
