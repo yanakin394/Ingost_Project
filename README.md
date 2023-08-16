@@ -1,6 +1,6 @@
 # Ingost - professional cleaning service
 
-<p>Responsive website for a cleaning service company</p>
+<p>Business website for a cleaning service company with a responsive layout</p>
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme.png">
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
 
