@@ -1,4 +1,4 @@
-# Ingost - preofessional cleaning service
+# Ingost - professional cleaning service
 
 <p>Responsive website for a cleaning service company</p>
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme.png">
