@@ -1,8 +1,8 @@
 # Ingost - website for cleaning services company. <br/>
 
 <p>Responsive website for a fundraiser</p>
-<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme">
-<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2">
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme.png">
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
 
 ## Getting started
 Host the parent directory on the webserver
