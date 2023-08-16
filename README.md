@@ -2,6 +2,9 @@
 
 Responsive website for a customer who provides cleaning services.
 
+## Getting started
+Host the parent directory on the webserver
+
 ## Technologies:
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="60" height="60"/>&nbsp;
@@ -9,7 +12,6 @@ Responsive website for a customer who provides cleaning services.
   <img src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original-wordmark.svg" title="Bootstrap" **alt="Bootstrap" width="60" height="60"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="60" height="60"/>
 </div>
-
 
 ## Thanks to all Contributors
 [![Contributors](https://contrib.rocks/image?repo=yanakin394/Ingost_Project)](https://github.com/yanakin394/Ingost_Project/graphs/contributors)
