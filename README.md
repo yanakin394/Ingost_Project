@@ -1,6 +1,8 @@
 # Ingost - website for cleaning services company. <br/>
 
-Responsive website for a customer who provides cleaning services.
+<p>Responsive website for a fundraiser</p>
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme">
+<img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2">
 
 ## Getting started
 Host the parent directory on the webserver
