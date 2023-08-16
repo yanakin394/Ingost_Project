@@ -1,6 +1,6 @@
 # Ingost - website for cleaning services company. <br/>
 
-Our team designed a website for a customer who provides cleaning services.
+Responsive website for a customer who provides cleaning services.
 
 You may check the website following the link <br/>
 https://yanakin394.github.io/Ingost_Project/ <br/>
@@ -18,9 +18,5 @@ https://almetevsk-uborka.ru <br/>
 </div>
 
 
-## Developer team: <br/>
-Dinara Knyazeva (Team Lead) https://github.com/DinaraKnyazeva, <br/>
-Yana Germatskaya https://github.com/yanakin394, <br/>
-Elena Bulavkina https://github.com/Sunkiti, <br/>
-Shahnoz ... https://github.com/Shahnoz18, <br/>
-Olga ... https://github.com/olkosti. <br/>
+## Thanks to all Contributors
+[![Contributors](https://contrib.rocks/image?repo=yanakin394/Ingost_Project)](https://github.com/yanakin394/Ingost_Project/graphs/contributors)
