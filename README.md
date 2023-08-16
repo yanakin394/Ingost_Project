@@ -1,6 +1,6 @@
-# Ingost - website for cleaning services company. <br/>
+# Ingost - preofessional cleaning service
 
-<p>Responsive website for a fundraiser</p>
+<p>Responsive website for a cleaning service company</p>
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme.png">
 <img width="700" alt="Website_screenshot" src="assets/images/screenshot_for_readme2.png">
 
